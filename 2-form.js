@@ -1,2 +1,2 @@
 import"./assets/modulepreload-polyfill-B5Qt9EMX.js";const e=document.querySelector(".feedback-form"),s="feedback-form-state",t=JSON.parse(localStorage.getItem(s))||{};t.email&&(e.elements.email.value=t.email);t.message&&(e.elements.message.value=t.message);e.addEventListener("input",()=>{const a={email:e.elements.email.value.trim(),message:e.elements.message.value.trim()};localStorage.setItem(s,JSON.stringify(a))});e.addEventListener("submit",a=>{a.preventDefault();const m=e.elements.email.value.trim(),l=e.elements.message.value.trim();if(!m||!l){alert("Lütfen tüm alanları doldurun.");return}console.log({email:m,message:l}),localStorage.removeItem(s),e.reset()});
-//# sourceMappingURL=02-form.js.map
+//# sourceMappingURL=2-form.js.map
